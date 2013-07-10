@@ -1,4 +1,4 @@
-square{
+.square{
     width: 40px;
     height: 40px;
     
@@ -13,5 +13,25 @@ square{
 }
 
 #start{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    background: orange;
+    height: 20px;
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    font-family: Arial;
+}
 
+#win{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    background: yellow;
+    height: 110px;
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    font-family: Arial;
 }
