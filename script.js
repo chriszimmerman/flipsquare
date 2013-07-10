@@ -2,22 +2,22 @@ $(document).ready(function() {
     $('#win').hide();
 
     $('#start').click(function(){
-        var swapColors = function(sq){
-            if(sq.hasClass('unhighlighted')){
-                sq.removeClass('unhighlighted');
-                sq.addClass('highlighted');
+        var swapColors = function(square){
+            if(square.hasClass('unhighlighted')){
+                square.removeClass('unhighlighted');
+                square.addClass('highlighted');
             }
             else{
-                sq.removeClass('highlighted');
-                sq.addClass('unhighlighted');
+                square.removeClass('highlighted');
+                square.addClass('unhighlighted');
             }
         };
 
-        var generatePuzzle = function(rowcol){
-            for(var i = 0; i < rowcol; i++){
-                $('table').append($('<tr id="'+i+'"/>'));
-                for(var j = 0; j < rowcol; j++){
-                    $('#'+i).append($('<td><div id="'+i+'x'+j+'" class="square unhighlighted"/></td>'));
+        var generatePuzzle = function(rowcolumn){
+            for(var row = 0; row < rowcolumn; row++){
+                $('table').append($('<tr id="'+row+'"/>'));
+                for(var column = 0; column < rowcolumn; column++){
+                    $('#'+row).append($('<td><div id="'+row+'x'+column+'" class="square unhighlighted"/></td>'));
                 }
             }
         };
