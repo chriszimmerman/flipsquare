@@ -1,0 +1,17 @@
+square{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.highlighted{
+    background: green;   
+}
+
+.unhighlighted{
+    background: blue;   
+}
+
+#start{
+
+}
